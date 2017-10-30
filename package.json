@@ -1,0 +1,26 @@
+{
+  "name": "string-utils",
+  "main": "./lib/main",
+  "version": "0.1.0",
+  "description": "Some utils for string processing",
+  "keywords": [],
+  "repository": "https://github.com/cc/string-utils",
+  "license": "MIT",
+  "engines": {
+    "cc": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {},
+  "actionProviders": [
+    {
+      "name": "base64",
+      "description": "Turn string into base64",
+      "input": "public.utf8-plain-text | public.png",
+      "output": "public.utf8-plain-text",
+      "methodName": "base64",
+      "configSchema": {}
+    }
+  ],
+  "devDependencies": {
+    "@types/node": "^8.0.47"
+  }
+}
