@@ -9,18 +9,27 @@
   "engines": {
     "cc": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
   "actionProviders": [
     {
       "name": "base64",
-      "description": "Turn string into base64",
-      "input": "public.utf8-plain-text | public.png",
-      "output": "public.utf8-plain-text",
-      "methodName": "base64",
-      "configSchema": {}
+      "description": "Turn string into base64.",
+      "input": "text",
+      "output": "text",
+      "methodName": "base64"
+    },
+    {
+      "name": "capitalize",
+      "description": "Converts the first character of string to upper case and the remaining to lower case.",
+      "input": "text",
+      "output": "text",
+      "methodName": "capitalize"
     }
   ],
   "devDependencies": {
+    "@types/lodash": "^4.14.85",
     "@types/node": "^8.0.47"
   }
 }
