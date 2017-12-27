@@ -14,6 +14,10 @@ module.exports = {
 
   capitalize (input: ValueWithType): ValueWithType {
     return {type: 'text', value: _.capitalize(input.value)}
+  },
+
+  truncate (input: ValueWithType, params): ValueWithType {
+    return {type: 'text', value: _.truncate(input.value, params)}
   }
 
 }

@@ -26,6 +26,26 @@
       "input": "text",
       "output": "text",
       "methodName": "capitalize"
+    },
+    {
+      "name": "truncate",
+      "description": "Truncates string if it's longer than the given maximum string length. The last characters of the truncated string are replaced with the omission string which defaults to \"...\".",
+      "input": "text",
+      "output": "text",
+      "methodName": "truncate",
+      "paramsSchema": {
+        "length": {
+          "type": "integer",
+          "default": 30
+        },
+        "omission": {
+          "type": "string",
+          "default": "..."
+        },
+        "separator": {
+          "type": "string"
+        }
+      }
     }
   ],
   "devDependencies": {
