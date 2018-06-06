@@ -21,31 +21,11 @@
       "methodName": "base64"
     },
     {
-      "name": "capitalize",
-      "description": "Converts the first character of string to upper case and the remaining to lower case.",
+      "name": "md5",
+      "description": "md5 checksum",
       "input": "text",
       "output": "text",
-      "methodName": "capitalize"
-    },
-    {
-      "name": "truncate",
-      "description": "Truncates string if it's longer than the given maximum string length. The last characters of the truncated string are replaced with the omission string which defaults to \"...\".",
-      "input": "text",
-      "output": "text",
-      "methodName": "truncate",
-      "paramsSchema": {
-        "length": {
-          "type": "integer",
-          "default": 30
-        },
-        "omission": {
-          "type": "string",
-          "default": "..."
-        },
-        "separator": {
-          "type": "string"
-        }
-      }
+      "methodName": "md5"
     }
   ],
   "devDependencies": {
